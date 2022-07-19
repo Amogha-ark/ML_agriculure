@@ -1,0 +1,110 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+
+
+
+
+
+    <div class="container">
+    <form method="POST" action="">
+
+        <div class="form-group">
+<!--          <label for="exampleInputEmail1">District Name</label>-->
+<!--          <input type="text" class="form-control" id="email1" placeholder="Enter District name" name="district">-->
+            <label class="my-1 mr-2" for="inlineFormCustomSelectPref">District name</label>
+              <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref" name="district">
+                <option selected>Choose...</option>
+                  <option value="MYSORE">MYSORE</option>
+                <option value="BANGALORE RURAL">BANGALORE RURAL</option>
+                <option value="BIJAPUR">BIJAPUR</option>
+                <option value="CHIKBALLAPUR">CHIKBALLAPUR</option>
+                  <option value="GULBARGA">GULBARGA</option>
+                  <option value="KOLAR">KOLAR</option>
+                  <option value="SHIMOGA">SHIMOGA</option>
+                  <option value="UDUPI">UDUPI</option>
+                  <option value="HAVERI">HAVERI</option>
+                  <option value="KODAGU">KODAGU</option>
+                  <option value="MANDYA">MANDYA</option>
+              </select>
+
+        </div>
+
+        <div class="form-group">
+          <label for="exampleInputPassword1">Crop Year</label>
+          <input type="number" class="form-control" id="year" placeholder="crop year" name="crop_year">
+        </div>
+
+<!--        <div class="form-group">-->
+<!--            <label for="exampleInputEmail1">Season</label>-->
+<!--&lt;!&ndash;            <input type="text" class="form-control" id="season"  placeholder="Enter season" name="season">&ndash;&gt;-->
+<!--            <select class="form-group" aria-label="Default select example" name="season">-->
+<!--                      <option selected>Open this select menu</option>-->
+<!--                      <option value="Summer" >Summer</option>-->
+<!--                      <option value="Winter">Winter</option>-->
+<!--                      <option value="Kharif">Kharif</option>-->
+<!--                      <option value="Whole Year">Whole Year</option>-->
+<!--            </select>-->
+<!--          </div>-->
+
+              <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Season</label>
+              <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref" name="season">
+                <option selected>Choose...</option>
+                <option value="Summer">Summer</option>
+                <option value="Rabi">Rabi</option>
+                <option value="Kharif">Kharif</option>
+                  <option value="Whole Year">Whole Year</option>
+              </select>
+
+          <div class="form-group">
+<!--            <label for="exampleInputEmail1">Crop</label>-->
+<!--            <input type="text" class="form-control" id="crop"  placeholder="Enter which crop" name="Crop">-->
+              <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Crops </label>
+              <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref" name="Crop">
+                <option selected>Choose the crops</option>
+                  <option value="Sugarcane">Sugarcane</option>
+                <option value="Rice">Rice</option>
+                <option value="Wheat">Wheat</option>
+                <option value="Onion">Onion</option>
+                  <option value="Ragi">Ragi</option>
+                  <option value="Jowar">Jowar</option>
+                  <option value="Tomato">Tomato</option>
+                  <option value="Maize">Maize</option>
+                  <option value="Cashewnut">Cashewnut</option>
+                  <option value="Moong(Green Gram)">Moong(Green Gram)</option>
+                  <option value="Castor seed">Castor seed</option>
+              </select>
+
+          </div>
+
+          <div class="form-group">
+            <label for="exampleInputEmail1">Area (acres)</label>
+            <input type="number" class="form-control" id="area"  placeholder="Enter Area Aviablilty" name="area">
+          </div>
+
+          <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1" name="confirm" value="confirm">
+                <label class="form-check-label" for="exampleCheck1">confirm</label>
+          </div>
+
+        <button type = "submit" class="btn btn-primary">Submit</button>
+
+
+      </form>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+
+
+
+{% endblock %}

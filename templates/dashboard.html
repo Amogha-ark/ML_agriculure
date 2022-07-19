@@ -1,0 +1,67 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<!--  <div class="">-->
+<!--        {% with messages = get_flashed_messages(with_categories=true) %}-->
+<!--          {% if messages %}-->
+<!--            {% for category, message in messages %}-->
+<!--              <div class="alert alert-{{ category }}">-->
+<!--                <center>{{ message }}</center>-->
+<!--              </div>-->
+<!--            {% endfor %}-->
+<!--          {% endif %}-->
+<!--        {% endwith %}-->
+
+<!--      </div>-->
+
+<br>
+
+
+    <div class="container">
+
+        <div class="shadow-lg p-3 mb-5 bg-white rounded">
+          <center><h1 class="page-header" >Welcome, {{ name }} !!</h1></center>
+        </div>
+
+    </div>
+
+<hr>
+    <div class="container">
+    <form method="POST" action="">
+
+        <div class="form-group">
+            <div class="shadow-lg p-3 mb-5 bg-white rounded">
+          <label >Enter RTC Number </label>
+          <input type="text" class="form-control" placeholder="Enter RTC number" name="rtc">
+            </div>
+        </div>
+      <button type = "submit" class="btn btn-primary">Submit</button>
+    </form>
+    </div>
+
+    {% if res %}
+    <hr>
+    <div class="container">
+    <h3> Previously entered crops value , Enter this below ! of this rtc no - {{res[0].rtc}}</h3>
+      <form method="POST" action="{{ url_for('previous_crop') }}">
+        <div class="form-group">
+        {% for i in res %}
+
+          <label >Enter the value of {{i.crop}}</label>
+          <input type="number" class="form-control" placeholder="Enter production value" name={{i.crop}}>
+        {% endfor %}
+        </div>
+        <button type = "submit" class="btn btn-primary">Submit</button>
+      </form>
+
+    </div>
+    {% endif %}
+    <hr>
+    <div class="container">
+    {% if predict %}
+            <a href="{{ url_for('predict_data') }}" class="btn btn-primary btn-lg active" role="button">predict here </a>
+    </div>
+    {% endif %}
+
+
+{% endblock %}

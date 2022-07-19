@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+	<!DOCTYPE html>
+	<html  lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+
+		<title> </title>
+
+		<!-- Charlist-->
+
+
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+
+		<!-- JQuery links  -->
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+	</head>
+
+	<body>
+	{% include 'Navbar/navbar.html' %}
+
+	  <section id="hero">
+		<div class="hero-container">
+		  <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+
+			<ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+			<div class="carousel-inner" role="listbox">
+
+			  <!-- Slide 1 -->
+			  <div class="carousel-item active" style="background: url(/static/assets/img/slide/slide-1.jpg) no-repeat;background-size: cover;">
+				<div class="carousel-container">
+				  <div class="carousel-content">
+					<h2 class="animated fadeInDown">Welcome to <span>Appriculture</span></h2>
+					<p class="animated fadeInUp">APPRICULTURE is the easiest solution to the biggest problem in India.
+						APPriculture is the technical solution for the  century old  problem of excess crop production and money fluctuations which  should have been solved long back  but has not , so we have here is the elegant and easy solution to solve it . This will also encourage future generation to take up farming inevitably as the profit margin and need for it increases !! As we have to feed 1.4 billion people farming  has become important more than ever ! APPriculture is the elegant simple and beautiful solution to agriculture.
+					</p>
+					<a href="" class="btn-get-started animated fadeInUp">Read More</a>
+				  </div>
+				</div>
+			  </div>
+
+			  <!-- Slide 2 -->
+			  <div class="carousel-item" style="background: url(static/assets/img/slide/slide-2.jpg) no-repeat;background-size: cover;">
+				<div class="carousel-container">
+				  <div class="carousel-content">
+					<h2 class="animated fadeInDown">Agriculture <span>in India </span></h2>
+					<p class="animated fadeInUp">The farmer is the only man in our economy who buys everything at retail, sells everything at wholesale, and pays the freight both ways.</p>
+					<a href="" class="btn-get-started animated fadeInUp">Read More</a>
+				  </div>
+				</div>
+			  </div>
+
+			  <!-- Slide 3 -->
+			  <div class="carousel-item" style="background: url(static/assets/img/slide/slide-3.jpg) no-repeat;background-size: cover;">
+				<div class="carousel-container">
+				  <div class="carousel-content">
+					<h2 class="animated fadeInDown">Agriculture is  <span>civilization.</span></h2>
+					<p class="animated fadeInUp">No race can prosper till it learns there is as much dignity in tilling a field as in writing a poem..</p>
+					<a href="" class="btn-get-started animated fadeInUp">Read More</a>
+				  </div>
+				</div>
+			  </div>
+
+			</div>
+
+			<a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+			  <span class="carousel-control-prev-icon icofont-rounded-left" aria-hidden="true"></span>
+			  <span class="sr-only">Previous</span>
+			</a>
+
+			<a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+			  <span class="carousel-control-next-icon icofont-rounded-right" aria-hidden="true"></span>
+			  <span class="sr-only">Next</span>
+			</a>
+
+		  </div>
+		</div>
+	  </section><!-- End Hero -->
+
+<!--	<br>-->
+	  <main id="main">
+
+		<!-- ======= Featured Section ======= -->
+		<section id="featured" class="featured">
+			<div class="container">
+			<div class="section-title">
+				<h2>Our Features</h2>
+				<p>We give accurate information almost everytime for your crop growth.Based on graphical representation we give you a user friendly details !.
+					Every time when you grow a crop visit our platform so that you can grow crops smarter than others.
+				</p>
+			  </div>
+			</div>
+		  <div class="container">
+
+			<div class="row">
+			  <div class="col-lg-4">
+				<div class="icon-box">
+				  <i class="icofont-computer"></i>
+				  <h3><a href="">User Friendly</a></h3>
+				  <p>No lengthy process is required  unlike other programs hosted by government,Just give your rtc number !</p>
+				</div>
+			  </div>
+			  <div class="col-lg-4 mt-4 mt-lg-0">
+				<div class="icon-box">
+				  <i class="icofont-id-card"></i>
+				  <h3><a href="">Flexibility</a></h3>
+				  <p>we also give information about which crop can be rotated and which isn’t ,so that u can grow accordingly.</p>
+				</div>
+			  </div>
+			  <div class="col-lg-4 mt-4 mt-lg-0">
+				<div class="icon-box">
+				  <i class="icofont-file-document"></i>
+				  <h3><a href="">Graphs representation</a></h3>
+				  <p>The graph we provide will give u exact information of crop growth their will be no problem for u at all .</p>
+				</div>
+			  </div>
+			</div>
+
+		  </div>
+		</section><!-- End Featured Section -->
+
+
+		<section id="about" class="about">
+			<div class="container">
+
+			  <div class="row">
+				<div class="col-lg-6">
+<!--				  <img src="static/assets/img/about.jpg" class="img-fluid" alt="">-->
+				  <canvas id="myChart" width="550" height="300"></canvas>
+				</div>
+				<div class="col-lg-6 pt-4 pt-lg-0 content">
+				  <h3>Our Goals</h3>
+				  <p class="font-italic">
+					The future of APPRICULTURE has unlimited application , it has global use and the project is expected to expand by creating a app (in mobile) for everyone which comprises of a portal , which has information on all the agricultural news , about crops (which is trending and which isn’t) , the latest technology and innovation in the field of agriculture , videos from the agricultural analysts and scientists and complete info about their
+soil ,in future we believe that they can enter their desired crop with their field measurement directly from app rather than contacting the insurance agent , this saves lots of man power .
+
+
+				  </p>
+				  <ul>
+					<li><i class="icofont-check-circled"></i> the farmer can access their personal portal only through their personal id and password which are generated and given by us.</li>
+
+					<li><i class="icofont-check-circled"></i> we have planned to use NUDI software for language conversion in future.</li>
+				  </ul>
+				  <p>
+
+				  </p>
+				</div>
+			  </div>
+
+			</div>
+		  </section><!-- End About Section -->
+
+
+
+
+
+
+		  <footer id="footer">
+
+
+
+
+			<div class="footer-top">
+			  <div class="container">
+				<div class="row">
+
+				  <div class="col-lg-3 col-md-6 footer-links">
+					<h4>Useful Links</h4>
+					<ul>
+					  <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+					  <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+
+					</ul>
+				  </div>
+
+
+
+				  <div class="col-lg-3 col-md-6 footer-contact">
+					<h4>Contact Us</h4>
+					<p>
+					  NIE Eng cllg <br>
+					  Mysore , Karnataka<br>
+					  India <br><br>
+					  <strong>Phone:</strong> +1 5589 55488 55<br>
+					  <strong>Email:</strong> info@example.com<br>
+					</p>
+
+				  </div>
+
+				  <div class="col-lg-3 col-md-6 footer-info">
+					<h3>About Appriculture</h3>
+					<p>Due to growing population there create a disparity between market demand and supply. So, proper management practices are required including reducing raw material wastage at farm and processing level and effective marketing strategies are required</p>
+					<div class="social-links mt-3">
+					  <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+					  <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+					  <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+					  <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+					  <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+					</div>
+				  </div>
+
+				</div>
+			  </div>
+			</div>
+
+			<div class="container">
+			  <div class="copyright">
+				&copy; Copyright <strong><span>Eterna</span></strong>. All Rights Reserved
+			  </div>
+			  <div class="credits">
+				<!-- All the links in the footer should remain intact. -->
+				<!-- You can delete the links only if you purchased the pro version. -->
+				<!-- Licensing information: https://bootstrapmade.com/license/ -->
+				<!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/eterna-free-multipurpose-bootstrap-template/ -->
+				Made by <a href="https://www.instagram.com/amogha_rao_k">APPRICULTURE</a>
+			  </div>
+			</div>
+		  </footer><!-- End Footer -->
+
+		  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+		  <!-- Vendor JS Files -->
+		  <script src="static/assets/vendor/jquery/jquery.min.js"></script>
+		  <script src="static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		  <script src="static/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+		  <script src="static/assets/vendor/php-email-form/validate.js"></script>
+		  <script src="static/assets/vendor/jquery-sticky/jquery.sticky.js"></script>
+		  <script src="static/assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+		  <script src="static/assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+		  <script src="static/assets/vendor/counterup/counterup.min.js"></script>
+		  <script src="static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+		  <script src="static/assets/vendor/venobox/venobox.min.js"></script>
+
+		  <!-- Template Main JS File -->
+		  <script src="static/assets/js/main.js"></script>
+		  <script>
+					  var ctx = document.getElementById("myChart").getContext("2d")
+					  var lineChart = new Chart(ctx,{
+											type: "bar",
+											data: {
+												labels : {{ labels | safe }},
+												datasets:[{
+												label: "production",
+												data : {{data | safe }}
+
+												}]
+											   },
+										options: {
+										responsive: false,
+										scales: {
+													yAxes: [{
+														ticks: {
+															beginAtZero:true,
+															max: 100
+														}
+													}]
+												}
+									   }
+									  });
+</script>
+
+
+
+
+</main>
+</body>
+
+</html>
